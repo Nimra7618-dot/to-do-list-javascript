@@ -1,0 +1,103 @@
+<!Doctype.html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My first javascript project</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navigation bar -->
+<div id="main"><h1>My To Do List </h1></div>
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-link">Task List</a>
+    <a href="completed.html" class="nav-link">Completed Tasks</a>
+    <a href="edit.html" class="nav-link">Edit Task</a>
+    <a href="add.html" class="nav-link">Add Task</a>
+  </div>
+</nav>
+<div class="add">
+<div id="head"><h2 id="heading1"> Tasks List</h2></div>
+<div id="tasks">
+<div id="task1" class="task-box">
+<h3 id="heading1">Coding Practice</h3>
+<div id="conatiner1">
+<br><input type="checkbox" id="t1" onclick="moveTask(this)">
+<label for="t1">Mark Completed</label>
+</div>
+<br><br>
+  <div class="button-group">
+<button class="edit" onclick="editTask(this)">Edit</button>
+<button class="delete" onclick="deleteTask(this)">Delete</button>
+</div>
+
+</div>
+<div id="task2" class="task-box">
+
+<h3 id="heading2">study</h3>
+<div id="conatiner1">
+<br><input type="checkbox" id="t1" onclick="moveTask(this)">
+<label for="t1">Mark Completed</label>
+</div>
+<br><br>
+<div class="button-group">
+<button class="edit" onclick="editTask(this)">Edit</button>
+<button class="delete" onclick="deleteTask(this)">Delete</button>
+</div>
+</div>
+<div id="task3" class="task-box">
+<h3 id="heading3">Mind fresh</h3>
+<div id="conatiner1">
+<br><input type="checkbox" id="t1" onclick="moveTask(this)">
+<label for="t1">Mark Completed</label>
+</div>
+<br><br>
+<div class="button-group">
+<button class="edit" onclick="editTask(this)">Edit</button>
+<button class=" delete" onclick="deleteTask(this)">Delete</button>
+</div>
+
+</div>
+<div id="task4" class="task-box">
+<h3 id="heading4">Book Reading</h3>
+<div id="conatiner1">
+<br><input type="checkbox" id="t1" onclick="moveTask(this)">
+<label for="t1">Mark Completed</label>
+</div>
+<br><br>
+<div class="button-group">
+<button class="edit" onclick="editTask(this)">Edit</button>
+<button class="delete" onclick="deleteTask(this)">Delete</button>
+</div>
+
+</div>
+<div id="task5" class="task-box">
+<h3 id="heading5">Rest</h3>
+<div id="conatiner1">
+<br><input type="checkbox" id="t1" onclick="moveTask(this)">
+<label for="t1">Mark Completed</label>
+</div>
+<br><br>
+<div class="button-group">
+<button class="edit" onclick="editTask(this)">Edit</button>
+<button class="delete" onclick="deleteTask(this)">Delete</button>
+</div>
+</div>
+<div id="task6" class="task-box">
+<h3 id="heading6">Rivision</h3>
+<div id="conatiner1">
+<br><input type="checkbox" id="t1" onclick="moveTask(this)">
+<label for="t1">Mark Completed</label>
+</div>
+<br><br>
+<div class="button-group">
+<button class="edit" onclick="editTask(this)">Edit</button>
+<button class="delete" onclick="deleteTask(this)">Delete</button>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="file.js"></script>
+</body>
+</html>

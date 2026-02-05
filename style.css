@@ -1,0 +1,468 @@
+body{
+  margin:0;
+padding:0;
+ font-family: 'Poppins', sans-serif;
+ 
+}
+#task{
+font-size:22px;
+}
+#head{
+display:flex;
+color:white;
+width:200px;
+height:50px;
+text-align:center;
+margin:0 auto;
+flex-wrap:wrap;
+}
+/* Navbar styling */
+#navbar {
+  position: fixed;   
+  top: 0;
+  width: 100%;
+  background: #001f3f;
+  padding: 12px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center; /* center horizontal */
+  gap: 30px;              /* space between links */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+margin:0 20px;
+font-weight:500;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent hover */
+  transform: scale(1.05);
+}
+
+#main{
+background-color:pink;
+width:100%;
+height:50px;
+text-align:center;
+  margin-top: 80px;     
+  padding: 15px 20px;  
+  margin-bottom: 10px; 
+box-shadow:0 4px 20px 10px rgba(0,0,0,0.2);
+  margin-top: 100px;
+
+}
+#main h1{
+margin:0;
+font-size:32px;
+letter-spacing:1px;
+}
+.task-box{
+ background: #f4c1cc;
+  width: 100%;
+height: 40px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+overflow:hidden;
+margin-bottom:5px;
+  border-bottom: 1px solid #eee;
+ box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* left, center, right */
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.task-row:last-child {
+  border-bottom: none;
+}
+.task-box h3 {
+   flex: 1;                  /* take remaining space */
+    margin: 0;
+    word-break: break-word;
+    min-width: 0;  }
+#conatiner1 {
+ flex: 0 0 auto;    /* don’t shrink or grow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;  /* optional: ensure enough space */
+}
+#my_tasks{
+display:block;
+color:black;
+font-size:20px;
+text-align:center;
+ list-style-position: inside;
+
+}
+#tasks {
+  max-width: 900px;
+  margin: 4px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.button-group {
+ display: flex !important;
+    flex-shrink: 0;
+    gap: 8px;
+    justify-content: flex-end;  /* right side */
+    align-items: center;
+}
+.button-group button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.button-group .edit {
+  background-color: #001f3f;
+  color: white;
+}
+
+.button-group .delete {
+  background-color: red;
+  color: white;
+}
+
+.button-group button:hover {
+  transform: scale(1.05);
+}
+#newTask h2{
+  color: #001f3f;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#newTask label1{
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #475569;
+}
+
+#task1{
+border-radius:10px;
+background-color:pink;
+padding:20px;
+height:40px;
+display:flex;
+}
+#task2{
+border-radius:10px;
+background-color:pink;
+padding:20px;
+}
+#task3{
+border-radius:10px;
+background-color:pink;
+padding:20px;
+}
+#task4{
+border-radius:10px;
+background-color:pink;
+padding:20px;
+}
+#task5{
+border-radius:10px;
+background-color:pink;
+padding:20px;
+}
+#task6{
+border-radius:10px;
+background-color:pink;
+padding:20px;
+}
+#want{
+color:purple;
+test-align:center;
+margin:0 auto;
+text-align:center;
+}
+#b1{
+background-color:pink;
+display:block;
+color:black;
+width:200px;
+height:50px;
+text-align:center;
+margin:0 auto;
+}
+#button1{
+  background: #db2777;
+  color: white;
+
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+#button1:hover{
+  background: #be185d;
+  transform: scale(1.08);
+}
+
+#label1{
+color:#001f3f;
+font-size:20px;
+display:none;
+margin:0 auto;
+text-align:center;
+}
+#placehold1{
+  display: none;
+
+  width: 50%;
+  height: 36px;
+
+  padding: 6px 10px;
+  margin: 4px auto;   /* 👈 centers it */
+
+  border-radius: 8px;
+  border: 2px solid #d1d5db;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #001f3f;
+  text-align: center;
+
+  background: #ffffff;
+  outline: none;
+
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+#placehold1:focus{
+  border-color: #001f3f;
+  box-shadow: 0 0 0 2px rgba(0,31,63,0.2);
+}
+
+
+
+#com{
+display:block;
+text-align:center;
+color:white;
+}
+#pen{
+display:block;
+text-align:center;
+color:white;
+}
+#submit{
+display:none;
+  background-color:  #001f3f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight:bold;
+margin:0 auto;
+text-align:center;
+transition:0.3s;
+}
+#submit:hover{
+transform:scale(1.2);
+}
+#tasklisted li{
+  background: white;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  list-style: none;
+  font-size: 18px;
+  color: #155724;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.edit{
+background-color: #031f3c;
+color:white;
+font-weight:bold;
+display:block;
+margin:0 auto;
+text-align:center;
+padding:10px 20px;
+cursor:pointer;
+ border-radius: 6px;
+box-shadow: 0 10px 25px rgba(white);
+  transition: 0.3s;
+}
+.edit:hover{
+transform:scale(1.2);
+}
+/* Edit Task Container */
+#edit1 {
+  background: #ffe4ec; 
+  border: 2px solid #f9a8d4;
+  color: #001f3f;
+  width: 400px;
+height:240px;
+  
+  margin: 20px auto;
+  padding-top:68px;
+padding-bottom:40px;
+  border-radius: 15px;
+  text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-left: 6px solid  #db2777;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+#edit1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Label */
+#ok {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #001f3f;
+  margin-bottom: 15px;
+}
+
+/* Input Field */
+#editInput {
+  width: 60%;
+  height: 40px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1.5px solid #d1d5db;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#editInput:focus {
+  border-color: #001f3f;
+  box-shadow: 0 0 5px rgba(0,31,63,0.2);
+}
+
+/* Save Button */
+#save {
+  background-color: #001f3f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#save:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+#pending{
+display:flex;
+flex-wrap:wrap;
+background-color:pink;
+width:300;
+height:230;
+margin: 0 auto;
+border-radius:10px;
+padding:20px;
+}
+#completed{
+  display: flex;
+  flex-direction: column;
+   background: #ffe4ec;
+  width: 360px;
+  min-height: 270px;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-left: 6px solid  #db2777; /* completed indicator */
+}
+#editTask{
+display:block;
+text-align:center;
+color:white;
+}
+
+
+.delete{
+background: #b52b3a;
+color:white;
+font-weight:bold;
+display:block;
+margin:0 auto;
+text-align:center;
+padding:10px 20px;
+cursor:pointer;
+ border-radius: 6px;
+box-shadow: 0 10px 25px rgba(white);
+  transition: 0.3s;
+display:flex;
+gap: 8px;
+}
+.delete:hover{
+  transform:scale(1.2);
+}
+#ok{
+font-weight:bold;
+color:purple;
+font-size:20;
+}
+#newTask{
+  background: #fff7fa;
+  color: #3f1d38;
+  border: 2px solid #f9a8d4;
+  background-size: 300% 300%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* shows it's clickable */
+
+  transition: all 0.4s ease;
+
+  /* Infinite animations */
+  animation: gradientShift 10s ease infinite, pulseBox 4s ease-in-out infinite;
+}
